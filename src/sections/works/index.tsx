@@ -1,43 +1,79 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import img16 from '../../../public/works/16.jpg';
+import img27 from '../../../public/works/27.jpg';
+import img30 from '../../../public/works/30.jpg';
+import img25 from '../../../public/works/25.jpg';
+import img1 from '../../../public/works/1.jpg';
+import img2 from '../../../public/works/2.jpg';
+import img3 from '../../../public/works/3.jpg';
+import img4 from '../../../public/works/4.jpg';
+import img5 from '../../../public/works/5.jpg';
+import img6 from '../../../public/works/6.jpg';
+import img7 from '../../../public/works/7.jpg';
+import img8 from '../../../public/works/8.jpg';
+import img9 from '../../../public/works/9.jpg';
+import img10 from '../../../public/works/10.jpg';
+import img11 from '../../../public/works/11.jpg';
+import img12 from '../../../public/works/12.jpg';
+import img13 from '../../../public/works/13.jpg';
+import img14 from '../../../public/works/14.jpg';
+import img15 from '../../../public/works/15.jpg';
+import img17 from '../../../public/works/17.jpg';
+import img18 from '../../../public/works/18.jpg';
+import img19 from '../../../public/works/19.jpg';
+import img20 from '../../../public/works/20.jpg';
+import img21 from '../../../public/works/21.jpg';
+import img22 from '../../../public/works/22.jpg';
+import img23 from '../../../public/works/23.jpg';
+import img24 from '../../../public/works/24.jpg';
+import img26 from '../../../public/works/26.jpg';
+import img28 from '../../../public/works/28.jpg';
+import img29 from '../../../public/works/29.jpg';
+import img31 from '../../../public/works/31.jpg';
+import img32 from '../../../public/works/32.jpg';
+import img33 from '../../../public/works/33.jpg';
+import img34 from '../../../public/works/34.jpg';
+import img35 from '../../../public/works/35.jpg';
+import img36 from '../../../public/works/36.jpg';
 
 const tattoos = [
-  { id: 16, src: '/works/16.jpg' },
-  { id: 27, src: '/works/27.jpg' },
-  { id: 30, src: '/works/30.jpg' },
-  { id: 25, src: '/works/25.jpg' },
-  { id: 1, src: '/works/1.jpg' },
-  { id: 2, src: '/works/2.jpg' },
-  { id: 3, src: '/works/3.jpg' },
-  { id: 4, src: '/works/4.jpg' },
-  { id: 5, src: '/works/5.jpg' },
-  { id: 6, src: '/works/6.jpg' },
-  { id: 7, src: '/works/7.jpg' },
-  { id: 8, src: '/works/8.jpg' },
-  { id: 9, src: '/works/9.jpg' },
-  { id: 10, src: '/works/10.jpg' },
-  { id: 11, src: '/works/11.jpg' },
-  { id: 12, src: '/works/12.jpg' },
-  { id: 13, src: '/works/13.jpg' },
-  { id: 14, src: '/works/14.jpg' },
-  { id: 15, src: '/works/15.jpg' },
-  { id: 17, src: '/works/17.jpg' },
-  { id: 18, src: '/works/18.jpg' },
-  { id: 19, src: '/works/19.jpg' },
-  { id: 20, src: '/works/20.jpg' },
-  { id: 21, src: '/works/21.jpg' },
-  { id: 22, src: '/works/22.jpg' },
-  { id: 23, src: '/works/23.jpg' },
-  { id: 24, src: '/works/24.jpg' },
-  { id: 26, src: '/works/26.jpg' },
-  { id: 28, src: '/works/28.jpg' },
-  { id: 29, src: '/works/29.jpg' },
-  { id: 31, src: '/works/31.jpg' },
-  { id: 32, src: '/works/32.jpg' },
-  { id: 33, src: '/works/33.jpg' },
-  { id: 34, src: '/works/34.jpg' },
-  { id: 35, src: '/works/35.jpg' },
-  { id: 36, src: '/works/36.jpg' },
+  { id: 16, src: img16 },
+  { id: 27, src: img27 },
+  { id: 30, src: img30 },
+  { id: 25, src: img25 },
+  { id: 1, src: img1 },
+  { id: 2, src: img2 },
+  { id: 3, src: img3 },
+  { id: 4, src: img4 },
+  { id: 5, src: img5 },
+  { id: 6, src: img6 },
+  { id: 7, src: img7 },
+  { id: 8, src: img8 },
+  { id: 9, src: img9 },
+  { id: 10, src: img10 },
+  { id: 11, src: img11 },
+  { id: 12, src: img12 },
+  { id: 13, src: img13 },
+  { id: 14, src: img14 },
+  { id: 15, src: img15 },
+  { id: 17, src: img17 },
+  { id: 18, src: img18 },
+  { id: 19, src: img19 },
+  { id: 20, src: img20 },
+  { id: 21, src: img21 },
+  { id: 22, src: img22 },
+  { id: 23, src: img23 },
+  { id: 24, src: img24 },
+  { id: 26, src: img26 },
+  { id: 28, src: img28 },
+  { id: 29, src: img29 },
+  { id: 31, src: img31 },
+  { id: 32, src: img32 },
+  { id: 33, src: img33 },
+  { id: 34, src: img34 },
+  { id: 35, src: img35 },
+  { id: 36, src: img36 },
 ];
 
 export const Works = () => {
@@ -53,11 +89,13 @@ export const Works = () => {
           <p className="text-sm text-zinc-500 tracking-widest mb-4">
             PORTFOLIO
           </p>
-          <h2 className="text-4xl md:text-5xl font-light font-oswald">Избранные работы</h2>
+          <h2 className="text-4xl md:text-5xl font-light font-oswald">
+            Избранные работы
+          </h2>
         </div>
 
         {/* Галерея */}
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <AnimatePresence>
             {visibleTattoos.map((tattoo) => (
               <motion.div
@@ -67,12 +105,12 @@ export const Works = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
-                className="overflow-hidden"
+                className="overflow-hidden "
               >
                 <img
                   src={tattoo.src}
                   alt="tattoo work"
-                  className="w-full h-[500px] cursor-pointer object-inherit hover:scale-105 transition duration-700"
+                  className="w-full sm:h-150 cursor-pointer hover:scale-105 transition duration-700"
                 />
               </motion.div>
             ))}

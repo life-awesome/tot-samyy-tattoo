@@ -9,7 +9,7 @@ export const About = () => {
           <img
             src={photo}
             alt="Tattoo master"
-            className="w-full h-[500px]  object-cover  transition duration-700"
+            className="w-full  transition duration-700"
           />
         </div>
 

@@ -12,7 +12,6 @@ export const Header = () => {
             Тот самый
           </div>
 
-          {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-10 text-sm text-zinc-400">
             <a href="#about" className="hover:text-white transition">
               О мастере
@@ -65,7 +64,7 @@ export const Header = () => {
             <a
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="mt-4 px-5 py-3 border border-white text-white text-center hover:bg-white hover:text-black transition"
+              className="mt-4 px-5 py-3 border border-white text-white text-center hover:bg-white hover:text-black transition rounded-3xl"
             >
               Записаться
             </a>

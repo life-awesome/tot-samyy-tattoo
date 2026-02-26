@@ -7,10 +7,11 @@ export default defineConfig({
   html: {
     title: 'Тот самый',
     template: 'index.html',
+      favicon: './public/favicon.png',
   },
   output: {
     // Указываем базовый путь для всех ресурсов
-    assetPrefix: '/tot-samyy-tattoo/',
+    assetPrefix: 'https://life-awesome.github.io/tot-samyy-tattoo/',
 
     // Настройка путей выходных файлов
     distPath: {
